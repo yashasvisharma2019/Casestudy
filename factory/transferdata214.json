@@ -1,0 +1,9 @@
+{
+	"name": "transferdata214",
+	"location": "canadacentral",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "137307b6-25cf-476d-a62a-28dbf8b5e067",
+		"tenantId": "037e0179-cd0e-4201-951c-167b7554d77a"
+	}
+}
