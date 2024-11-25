@@ -50,7 +50,13 @@
 				"outputs": [
 					{
 						"referenceName": "DelimitedText1",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"filename": {
+								"value": "@concat(replace(pipeline().parameters.ptriggerfile,'.csv',''), '_', formatDateTime(convertTimeZone(utcNow(),'UTC','Eastern Standard Time'),'yyyy-MM-ddTHHmmss'), '.csv')",
+								"type": "Expression"
+							}
+						}
 					}
 				]
 			}
