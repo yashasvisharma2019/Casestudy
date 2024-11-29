@@ -98,7 +98,13 @@
 							"outputs": [
 								{
 									"referenceName": "tocopy",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"TableName": {
+											"value": "@item().TableName",
+											"type": "Expression"
+										}
+									}
 								}
 							]
 						}
