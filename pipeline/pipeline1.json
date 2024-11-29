@@ -3,8 +3,8 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Copy data1",
-				"type": "Copy",
+				"name": "look for all tables",
+				"type": "Lookup",
 				"dependsOn": [],
 				"policy": {
 					"timeout": "0.12:00:00",
@@ -16,49 +16,17 @@
 				"userProperties": [],
 				"typeProperties": {
 					"source": {
-						"type": "AzureSqlSource",
+						"type": "SqlServerSource",
+						"sqlReaderQuery": "SELECT\ns.name AS SchemaName,\nt.name AS TableName From sys.tables t INNER JOIN sys.schemas s\nON t.schema_id = s.schema_id\nWHERE s.name = 'SalesLT';",
 						"queryTimeout": "02:00:00",
 						"partitionOption": "None"
 					},
-					"sink": {
-						"type": "DelimitedTextSink",
-						"storeSettings": {
-							"type": "AzureBlobFSWriteSettings"
-						},
-						"formatSettings": {
-							"type": "DelimitedTextWriteSettings",
-							"quoteAllText": true,
-							"fileExtension": ".txt"
-						}
-					},
-					"enableStaging": false,
-					"translator": {
-						"type": "TabularTranslator",
-						"typeConversion": true,
-						"typeConversionSettings": {
-							"allowDataTruncation": true,
-							"treatBooleanAsNumber": false
-						}
-					}
-				},
-				"inputs": [
-					{
-						"referenceName": "AzureSqlTable1",
+					"dataset": {
+						"referenceName": "SqlServerTable1",
 						"type": "DatasetReference"
-					}
-				],
-				"outputs": [
-					{
-						"referenceName": "DelimitedText1",
-						"type": "DatasetReference",
-						"parameters": {
-							"filename": {
-								"value": "@concat(replace(pipeline().parameters.ptriggerfile,'.csv',''), '_', formatDateTime(convertTimeZone(utcNow(),'UTC','Eastern Standard Time'),'yyyy-MM-ddTHHmmss'), '.csv')",
-								"type": "Expression"
-							}
-						}
-					}
-				]
+					},
+					"firstRowOnly": false
+				}
 			}
 		],
 		"parameters": {
