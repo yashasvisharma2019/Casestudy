@@ -29,11 +29,6 @@
 				}
 			}
 		],
-		"parameters": {
-			"ptriggerfile": {
-				"type": "string"
-			}
-		},
 		"annotations": []
 	}
 }
