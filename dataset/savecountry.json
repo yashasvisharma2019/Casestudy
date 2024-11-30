@@ -1,5 +1,5 @@
 {
-	"name": "DelimitedText2",
+	"name": "savecountry",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureDataLhttp",
