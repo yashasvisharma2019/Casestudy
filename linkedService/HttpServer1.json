@@ -4,7 +4,7 @@
 		"annotations": [],
 		"type": "HttpServer",
 		"typeProperties": {
-			"url": "https://raw.githubusercontent.com/yashasvisharma2019/datasets/refs/heads/main",
+			"url": "https://raw.githubusercontent.com/yashasvisharma2019/datasets/refs/heads/main/",
 			"enableServerCertificateValidation": true,
 			"authenticationType": "Anonymous"
 		}
