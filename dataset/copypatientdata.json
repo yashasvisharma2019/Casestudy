@@ -1,5 +1,5 @@
 {
-	"name": "savecountry",
+	"name": "copypatientdata",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureDataLhttp",
