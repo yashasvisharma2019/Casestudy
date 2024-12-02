@@ -8,6 +8,9 @@
 		"AzureDataLakeStorage1_accountKey": {
 			"value": ""
 		},
+		"AzureDataLhttp_accountKey": {
+			"value": ""
+		},
 		"AzureSqlDatabase1_password": {
 			"value": ""
 		},
@@ -16,6 +19,9 @@
 		},
 		"AzureDataLakeStorage1_properties_typeProperties_url": {
 			"value": "https://datastoragenew12.dfs.core.windows.net/"
+		},
+		"AzureDataLhttp_properties_typeProperties_url": {
+			"value": "https://forhttp.dfs.core.windows.net/"
 		},
 		"AzureKeyVault1_properties_typeProperties_baseUrl": {
 			"value": "https://Savepasas.vault.azure.net/"
@@ -28,6 +34,9 @@
 		},
 		"AzureSqlDatabase1_properties_typeProperties_userName": {
 			"value": "yash"
+		},
+		"HttpServer1_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/yashasvisharma2019/datasets/refs/heads/main/"
 		},
 		"onpremise_properties_typeProperties_server": {
 			"value": "MINE"
