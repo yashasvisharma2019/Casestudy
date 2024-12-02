@@ -111,7 +111,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "copypatientdata",
+						"referenceName": "copypatienttohttp",
 						"type": "DatasetReference"
 					}
 				]
