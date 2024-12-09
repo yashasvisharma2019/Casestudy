@@ -1,5 +1,5 @@
 {
-	"name": "savecountry",
+	"name": "copypatientdata",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureDataLhttp",
@@ -15,7 +15,7 @@
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
 			"firstRowAsHeader": false,
-			"quoteChar": null
+			"quoteChar": "\""
 		},
 		"schema": []
 	}

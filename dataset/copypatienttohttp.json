@@ -1,0 +1,43 @@
+{
+	"name": "copypatienttohttp",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLhttp",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "raw"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "1001",
+				"type": "String"
+			},
+			{
+				"name": "15",
+				"type": "String"
+			},
+			{
+				"name": "RT-PCR",
+				"type": "String"
+			},
+			{
+				"name": "2024-07-27",
+				"type": "String"
+			},
+			{
+				"name": "MedLife Labs",
+				"type": "String"
+			}
+		]
+	}
+}

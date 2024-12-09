@@ -1,5 +1,5 @@
 {
-	"name": "fulldatahttp",
+	"name": "testresults",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "HttpServer1",
@@ -10,9 +10,10 @@
 		"typeProperties": {
 			"location": {
 				"type": "HttpServerLocation",
-				"relativeUrl": "https://raw.githubusercontent.com/yashasvisharma2019/datasets/refs/heads/main/full_grouped.csv"
+				"relativeUrl": "ExpandedTestResults.csv"
 			},
 			"columnDelimiter": ",",
+			"rowDelimiter": "\n",
 			"escapeChar": "\\",
 			"firstRowAsHeader": true,
 			"quoteChar": "\""

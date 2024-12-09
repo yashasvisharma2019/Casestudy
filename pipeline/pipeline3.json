@@ -48,13 +48,13 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "covid19country",
+						"referenceName": "PatientData",
 						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "savecountry",
+						"referenceName": "copypatientdata",
 						"type": "DatasetReference"
 					}
 				]
@@ -105,13 +105,13 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "fulldatahttp",
+						"referenceName": "testresults",
 						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "savecountry",
+						"referenceName": "copypatienttohttp",
 						"type": "DatasetReference"
 					}
 				]
